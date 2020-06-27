@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список литературы</title>
+    <link rel="stylesheet" href="./styles/app.css">
+  </head>
+
+  <body class="body">
+    <!-- BEMGO:symbol -->
+
+    <div class="container">
+      <div class="literature container__literature">
+        <h1 class="literature__title">Список литературы</h1>
+        <select name="source" class="literature__choice field field__choice">
+          <option value="book">Книга</option>
+          <option value="article">Статья</option>
+        </select>
+
+        <div class="book js_write">
+          <form action="#" method="post">
+            <div class="side">
+              <label>
+                <span class="side__instruction">Введите фамилию и инициалы авторов через запятую (максимум 3)</span>
+                <input type="text" class="side__entry field js_name" placeholder="Иванов В.А., Киселев И.Н." required>
+              </label>
+              <label class="side__check">
+                <input type="checkbox" name="etc" class="side__checkbox">
+                <span class="side__text_s">Более 3х авторов</span>
+              </label>
+            </div>
+            <div class="side">
+              <label>
+                <span class="side__instruction">Заглавие</span>
+                <input type="text" class="side__entry field js_title" placeholder="Общая психология" required>
+              </label>
+            </div>
+            <div class="side">
+              <label>
+                <span class="side__instruction">Место издания (город)</span>
+                <input type="text" class="side__entry field js_city" placeholder="Москва" required>
+              </label>
+            </div>
+
+            <div class="side__edition">
+              <div class="side side_size_s">
+                <label>
+                  <span class="side__instruction">Издательство</span>
+                  <input type="text" class="side__entry field field_size_s js_publisher" placeholder="Флинта" required>
+                </label>
+              </div>
+              <div class="side side_size_s">
+                <label>
+                  <span class="side__instruction">Год издания</span>
+                  <input type="text" class="side__entry field field_size_s js_year" placeholder="2019" required>
+                </label>
+              </div>
+              <div class="side side_size_s">
+                <label>
+                  <span class="side__instruction">Количество страниц</span>
+                  <input type="text" class="side__entry field field_size_s js_pages" placeholder="420" required>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="side__button">ДОБАВИТЬ В СПИСОК ЛИТЕРАТУРЫ</button>
+          </form>
+        </div>
+
+        <div class="article js_write">
+          <form>
+            <div class="side">
+              <label>
+                <span class="side__instruction">Введите фамилию и инициалы авторов через запятую (максимум 3)</span>
+                <input type="text" class="side__entry field" placeholder="Иванов В.А., Киселев И.Н." required>
+              </label>
+              <label class="side__check">
+                <input type="checkbox" name="etc" class="side__checkbox">
+                <span class="side__text_s">Более 3х авторов</span>
+              </label>
+            </div>
+            <div class="side">
+              <label>
+                <span class="side__instruction">Название статьи</span>
+                <input type="text" class="side__entry field" placeholder="Проблемы поколения" required>
+              </label>
+            </div>
+            <div class="side">
+              <label>
+                <span class="side__instruction">Наименование журнала</span>
+                <input type="text" class="side__entry field" placeholder="Журавленок" required>
+              </label>
+            </div>
+
+            <div class="side__edition">
+              <div class="side side_size_s">
+                <label>
+                  <span class="side__instruction">Номер выпуска</span>
+                  <input type="text" class="side__entry field field_size_s" placeholder="4" required>
+                </label>
+              </div>
+              <div class="side side_size_s">
+                <label>
+                  <span class="side__instruction">Год издания</span>
+                  <input type="text" class="side__entry field field_size_s" placeholder="2019" required>
+                </label>
+              </div>
+              <div class="side side_size_s">
+                <label>
+                  <span class="side__instruction">Страницы</span>
+                  <input type="text" class="side__entry field field_size_s" placeholder="69-88" required>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="side__button">ДОБАВИТЬ В СПИСОК ЛИТЕРАТУРЫ</button>
+          </form>
+        </div>
+
+        <div class="output field field_output literature__output">
+          <p class="output__title">Список литературы:</p>
+          <ol class="output__list">
+          </ol>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts/app.js"></script>
+
+  </body>
+
+</html>
