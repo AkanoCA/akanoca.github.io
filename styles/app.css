@@ -33,6 +33,11 @@
   .literature__output {
     margin-top: 50px;
     margin-bottom: 60px; }
+  .literature__dash {
+    margin-left: 30px; }
+  .literature__example {
+    border-bottom: 1px dashed #000;
+    cursor: pointer; }
 
 .output__title {
   padding: 30px 25px; }
