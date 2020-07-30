@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <link rel="stylesheet" href="./styles/app.css">
+    <svg style="position:absolute;top:0;left:0;width:1px;height:1px;visibility:hidden;opacity:0;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol fill="none" viewBox="0 0 50 46" id="carousel__arrow-l" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.232 20.768a2.5 2.5 0 0 1 0-3.536l15.91-15.91a2.5 2.5 0 0 1 3.536 3.536L10.535 19l14.143 14.142a2.5 2.5 0 0 1-3.536 3.536l-15.91-15.91zM46 21.5H7v-5h39v5z" fill="var(--primary-color, #C4A7DA)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 50 46" id="carousel__arrow-r" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.768 20.768a2.5 2.5 0 0 0 0-3.536l-15.91-15.91a2.5 2.5 0 0 0-3.536 3.536L39.465 19 25.322 33.142a2.5 2.5 0 0 0 3.536 3.536l15.91-15.91zM4 21.5h39v-5H4v5z" fill="var(--primary-color, #C4A7DA)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 58 116" id="contacts__facebook" xmlns="http://www.w3.org/2000/svg">
+        <path d="M53.502 65.356l2.969-20.767H37.908V31.113c0-5.682 2.593-11.22 10.907-11.22h8.439V2.213S49.595.81 42.274.81c-15.288 0-25.28 9.946-25.28 27.952v15.827H0v20.767h16.993v50.202h20.915V65.356h15.594z" fill="var(--primary-color, #E5E5E5)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 115 116" id="contacts__instagram" xmlns="http://www.w3.org/2000/svg">
+        <path d="M57.76 28.764c-16.248 0-29.353 13.135-29.353 29.42 0 16.285 13.105 29.42 29.352 29.42s29.352-13.135 29.352-29.42c0-16.285-13.105-29.42-29.352-29.42zm0 48.547c-10.5 0-19.083-8.578-19.083-19.127 0-10.55 8.557-19.127 19.082-19.127s19.082 8.578 19.082 19.127c0 10.55-8.583 19.127-19.082 19.127zm37.398-49.75a6.838 6.838 0 0 1-6.847 6.861 6.838 6.838 0 0 1-6.846-6.862c0-3.79 3.066-6.862 6.846-6.862 3.781 0 6.847 3.073 6.847 6.862zm19.44 6.964c-.435-9.192-2.529-17.335-9.248-24.043-6.693-6.709-14.816-8.808-23.987-9.27-9.452-.537-37.782-.537-47.233 0-9.146.436-17.27 2.536-23.988 9.244C3.424 17.165 1.355 25.307.895 34.5c-.537 9.474-.537 37.87 0 47.344.434 9.192 2.529 17.334 9.247 24.043 6.719 6.708 14.817 8.808 23.988 9.269 9.451.538 37.781.538 47.233 0 9.17-.435 17.294-2.535 23.987-9.269 6.693-6.709 8.788-14.851 9.248-24.043.536-9.474.536-37.844 0-47.318zm-12.211 57.483c-1.993 5.019-5.85 8.885-10.882 10.908-7.536 2.995-25.418 2.304-33.746 2.304-8.328 0-26.235.666-33.745-2.304-5.007-1.998-8.865-5.864-10.883-10.908-2.989-7.553-2.299-25.477-2.299-33.824 0-8.347-.664-26.296 2.3-33.824 1.992-5.019 5.85-8.885 10.882-10.908 7.535-2.996 25.417-2.304 33.745-2.304 8.328 0 26.235-.666 33.746 2.304 5.007 1.997 8.864 5.864 10.882 10.908 2.989 7.553 2.299 25.477 2.299 33.824 0 8.347.69 26.296-2.299 33.824z" fill="var(--primary-color, #E5E5E5)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 61 61" id="menu__phone" xmlns="http://www.w3.org/2000/svg">
+        <path d="M54.065.773H6.922A6.429 6.429 0 0 0 .494 7.2v47.143a6.429 6.429 0 0 0 6.428 6.429h47.143a6.429 6.429 0 0 0 6.429-6.429V7.201A6.429 6.429 0 0 0 54.065.773zM51.87 41.938l-2.009 8.706a2.009 2.009 0 0 1-1.957 1.557c-21.428 0-38.839-17.372-38.839-38.839a2.103 2.103 0 0 1 1.558-1.957l8.705-2.009c.149-.031.3-.048.451-.052a2.18 2.18 0 0 1 1.847 1.218l4.018 9.375c.099.252.153.52.162.791a2.277 2.277 0 0 1-.736 1.555l-5.075 4.152A31.06 31.06 0 0 0 34.832 41.27l4.151-5.074c.402-.44.96-.704 1.555-.737.271.009.54.064.792.162l9.375 4.018a2.178 2.178 0 0 1 1.217 1.847c-.002.152-.02.303-.052.451z" fill="var(--primary-color, #C4A7DA)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 50 46" id="our-masters__arrow-l" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.232 20.768a2.5 2.5 0 0 1 0-3.536l15.91-15.91a2.5 2.5 0 0 1 3.536 3.536L10.535 19l14.143 14.142a2.5 2.5 0 0 1-3.536 3.536l-15.91-15.91zM46 21.5H7v-5h39v5z" fill="var(--primary-color, #C4A7DA)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 50 46" id="our-masters__arrow-r" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.768 20.768a2.5 2.5 0 0 0 0-3.536l-15.91-15.91a2.5 2.5 0 0 0-3.536 3.536L39.465 19 25.322 33.142a2.5 2.5 0 0 0 3.536 3.536l15.91-15.91zM4 21.5h39v-5H4v5z" fill="var(--primary-color, #C4A7DA)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 20 20" id="review-box__smile" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 0C4.476 0 0 4.476 0 10s4.476 10 10 10 10-4.476 10-10S15.524 0 10 0zM4.516 8.685c.133-1.697 1.299-2.879 2.258-2.879.96 0 2.125 1.182 2.258 2.88.028.346-.435.48-.6.18l-.384-.685c-.31-.552-.774-.87-1.27-.87s-.96.318-1.27.87l-.383.686c-.173.298-.637.161-.609-.182zm10.113 4.952A6.007 6.007 0 0 1 10 15.807c-1.794 0-3.48-.79-4.629-2.17-.544-.657.444-1.48.992-.827A4.712 4.712 0 0 0 10 14.512a4.725 4.725 0 0 0 3.637-1.702c.548-.653 1.536.174.992.827zm.25-4.77l-.383-.686c-.31-.552-.774-.87-1.27-.87s-.96.318-1.27.87l-.383.686c-.166.294-.63.161-.601-.182.133-1.697 1.298-2.879 2.258-2.879s2.125 1.182 2.258 2.88c.024.346-.444.48-.609.18z" fill="var(--primary-color, #fefffe)" />
+      </symbol>
+    </svg>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ff057336-5844-4409-909c-8ac516f717da&lang=ru_RU" type="text/javascript"></script>
+  </head>
+
+  <body class="body">
+    <div class="menu">
+      <div class="menu__wrap">
+        <a href="#about-us" class="menu__link">О нас</a>
+        <a href="#examples" class="menu__link">Примеры работ</a>
+        <a href="#price" class="menu__link">Стоимость услуг</a>
+        <a href="#coordinates" class="menu__link">Как добраться</a>
+        <div class="menu__phone">
+          <svg class="menu__svg">
+            <use xlink:href="./styles\img\symbol.svg#menu__phone"></use>
+          </svg>
+          <a href="tel:+78312410000" class="menu__link menu__link_phone">(831) 241-00-00</a>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+
+
+      <div class="frame frame_logo">
+        <div class="frame__box-1 frame__box-1_logo"></div>
+        <div class="frame__box-2 frame__box-2_logo"></div>
+        <div class="frame__content frame__content_logo">
+          <p class="logo">Tattoo art studio</p>
+        </div>
+      </div>
+
+      <div class="sing-up sing-up_pos">
+        <h1 class="sing-up__title">Студия художественной татуировки</h1>
+        <p class="sing-up__text">Запишись сейчас и получи скидку 20%</p>
+        <form action="#request"><button type="submit" class="sing-up__button button">Записаться</button></form>
+      </div>
+
+
+      <div class="background">
+        <img src="./static/background/man-l.png" alt="Статуя с тату" class="background__img">
+        <img src="./static/background/man-r.png" alt="Статуя с тату" class="background__img">
+      </div>
+    </header>
+    <main class="main">
+      <div class="about-us" id="about-us">
+        <h1 class="title title_pos">Кто мы?</h1>
+        <p class="description description_pos">Крутая студия <span class="description_accent">в самом центре
+            Питера,</span> где понимают, что <span class="description_accent">создание татуировки</span> - это
+          <span class="description_accent">искусство.</span> У нас работают профессионалы, ежедневно <span class="description_accent">набивающие татуировки годами.</span> Сделаем тату <span class="description_accent">точно по эскизу</span> и на пальцах <span class="description_accent">объясним, как за ним ухаживать</span></p>
+        <h1 class="title title_big-space">Почему выбирают нас?</h1>
+        <div class="advantages advantages_pos">
+          <div class="card">
+            <!-- <img src="./static/card/icon-1.png" alt="" class="card__img"> -->
+            <div class="frame frame_card">
+              <div class="frame__box-1 frame__box-1_card"></div>
+              <div class="frame__box-2 frame__box-2_card"></div>
+              <div class="frame__content frame__content_card">
+                <p class="card__text">Используем оборудование и расходные материалы от самых надежных
+                  производителей</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./static/card/icon-2.png" alt="" class="card__img"> -->
+            <div class="frame frame_card">
+              <div class="frame__box-1 frame__box-1_card"></div>
+              <div class="frame__box-2 frame__box-2_card"></div>
+              <div class="frame__content frame__content_card">
+                <p class="card__text">В студии всегда чисто, оборудование стерилизуется по высоким
+                  стандартам</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./static/card/icon-3.png" alt="" class="card__img"> -->
+            <div class="frame frame_card">
+              <div class="frame__box-1 frame__box-1_card"></div>
+              <div class="frame__box-2 frame__box-2_card"></div>
+              <div class="frame__content frame__content_card">
+                <p class="card__text">Любой стиль татуировки, большой выбор цветовых решений, скидка 20% на
+                  работу мастера </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-masters">
+        <h1 class="title title_masters">Наши мастера</h1>
+        <div class="our-masters__container">
+          <div class="frame frame_pos">
+            <div class="frame__box-1"></div>
+            <div class="frame__box-2"></div>
+            <div class="frame__content">
+              <div class="our-masters__card our-masters__card_show">
+                <img src="./static/our-masters/master-1.png" alt="Иван" class="our-masters__img">
+                <div class="our-masters__wrap">
+                  <div class="our-masters__description">
+                    <!-- Name -->
+                    <p class="our-masters__name">Иван</p>
+                    <!-- Description -->
+                    <p class="our-masters__text">
+                      Работает <span class="our-masters__text_accent">более 7 лет</span>, сделал <span class="our-masters__text_accent">около 700</span> татуировок, прошел более
+                      <span class="our-masters__text_accent">10 курсов</span> и сейчас
+                      сам обучает новичков основам профессии <span class="our-masters__text_accent">тату-мастера.</span>
+                    </p>
+
+                    <!-- Review -->
+                    <p class="our-masters__review our-masters__text">
+                      <span class="our-masters__text_accent our-masters__link">Отзывы</span> о мастере
+                    </p>
+                    <!-- <div class="review-box">
+										<div class="review-box__review">
+											<svg class="review-box__svg">
+												<use xlink:href="./styles\img\symbol.svg#review-box__smile"></use>
+											</svg>
+											<p class="review-box__text">Все выполнил качественно и быстро</p>
+										</div>
+									</div> -->
+
+
+                    <!-- Price -->
+                    <p class="our-masters__price our-masters__text">
+                      Стоимость работ: от 3000 рублей
+                    </p>
+
+                    <!-- Button -->
+                    <form action="#request"><button class="our-masters__button button" type="submit">Записаться</button></form>
+                  </div>
+                </div>
+              </div>
+              <div class="our-masters__card">
+                <img src="./static/our-masters/master-2.png" alt="Марина" class="our-masters__img">
+                <div class="our-masters__wrap">
+                  <div class="our-masters__description">
+                    <!-- Name -->
+                    <p class="our-masters__name">Марина</p>
+                    <!-- Description -->
+                    <p class="our-masters__text">
+                      Работает <span class="our-masters__text_accent">4 года</span>, создает <span class="our-masters__text_accent">необычные татуировоки</span>, рисует <span class="our-masters__text_accent">креативные эскизы</span>, работает в Tattoo
+                      Art Studio с самого основания.
+                    </p>
+
+                    <!-- Review -->
+                    <p class="our-masters__review our-masters__text">
+                      <span class="our-masters__text_accent">Отзывы</span> о мастере
+                    </p>
+
+                    <!-- Price -->
+                    <p class="our-masters__price our-masters__text">
+                      Стоимость работ: от 1000 рублей
+                    </p>
+
+                    <!-- Button -->
+                    <form action="#request"><button class="our-masters__button button" type="submit">Записаться</button></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg class="our-masters__arrow our-masters__arrow_l our-masters__arrow_hide">
+            <use xlink:href="./styles\img\symbol.svg#our-masters__arrow-l"></use>
+          </svg>
+          <svg class="our-masters__arrow our-masters__arrow_r">
+            <use xlink:href="./styles\img\symbol.svg#our-masters__arrow-r"></use>
+          </svg>
+        </div>
+
+      </div>
+
+      <div class="examples" id="examples">
+        <h1 class="title title_examples">Примеры работ</h1>
+
+        <div class="examples__wrap">
+          <div class="frame frame_vertical" ">
+					<div class=" frame__box-1 frame__box-1_vertical"></div>
+          <div class="frame__box-2 frame__box-2_vertical"></div>
+          <div class="frame__content frame__content_vertical ">
+            <div class="carousel">
+              <img src="./static/carousel/example-1.png" alt="Тату на руке" class="carousel__item carousel__item_show">
+              <img src="./static/carousel/example-2.png" alt="Тату на руке" class="carousel__item">
+              <img src="./static/carousel/example-3.png" alt="Тату на руке" class="carousel__item">
+              <img src="./static/carousel/example-4.png" alt="Тату на руке" class="carousel__item">
+              <img src="./static/carousel/example-5.png" alt="Тату на руке" class="carousel__item">
+            </div>
+          </div>
+        </div>
+        <svg class="carousel__arrow carousel__arrow_l">
+          <use xlink:href="./styles\img\symbol.svg#carousel__arrow-l"></use>
+        </svg>
+        <svg class="carousel__arrow carousel__arrow_r">
+          <use xlink:href="./styles\img\symbol.svg#carousel__arrow-r"></use>
+        </svg>
+      </div>
+
+      </div>
+
+      <div class="video">
+        <div class="video__wrap">
+          <!-- <iframe class="video__youtube" type="text/html" width="720" height="405"
+					src="https://www.youtube.com/embed/roQsnFt3c3M" frameborder="0" allowfullscreen> -->
+        </div>
+      </div>
+
+      <div class="price" id="price">
+        <h1 class="title title_price">Стоимость услуг</h1>
+
+        <div class="price__wrap">
+          <!-- CARD #1 -->
+          <div class="frame frame_price" id="examples">
+            <div class="frame__box-1 frame__box-1_price"></div>
+            <div class="frame__box-2 frame__box-2_price"></div>
+            <div class="frame__content frame__content_price">
+              <div class="price__description">
+                <p class="price__title">
+                  Разработка эскиза
+                </p>
+                <p class="price__cost">
+                  от <span class="price__cost_accent">100</span> рублей
+                </p>
+                <p class="price__text">
+                  Приходи к нам со своей идеей, и мастер нарисует для тебя эскиз татуировки
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD #2 -->
+          <div class="frame frame_price" id="examples">
+            <div class="frame__box-1 frame__box-1_price"></div>
+            <div class="frame__box-2 frame__box-2_price"></div>
+            <div class="frame__content frame__content_price">
+              <div class="price__description">
+                <p class="price__title">
+                  Татуировка (минимальный сеанс)
+                </p>
+                <p class="price__cost">
+                  от <span class="price__cost_accent">1000</span> рублей
+                </p>
+                <p class="price__text price__text_correct">
+                  Небольшую татуировку мастер набьет за минимальный сеанс - 1 час
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD #3 -->
+          <div class="frame frame_price" id="examples">
+            <div class="frame__box-1 frame__box-1_price"></div>
+            <div class="frame__box-2 frame__box-2_price"></div>
+            <div class="frame__content frame__content_price">
+              <div class="price__description">
+                <p class="price__title">
+                  Татуировка (стандартный сеанс)
+                </p>
+                <p class="price__cost price__cost_min">
+                  от <span class="price__cost_accent">4000</span> рублей
+                </p>
+                <p class="price__text price__text_min">
+                  Татутировку побольше или с необычными элементами мастер сделает за 2-4 часа
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coordinates" id="coordinates">
+        <h1 class="title title_coordinates">Как добраться</h1>
+
+        <p class="coordinates__adress">
+          <span class="coordinates__adress_accent">Наш тату-салон находится по адресу: Санкт-Петербург,</span>
+          Невский проспект, д.40
+        </p>
+
+
+        <div class="frame frame_coordinates">
+          <div class="frame__box-1 frame__box-1_coordinates"></div>
+          <div class="frame__box-2 frame__box-2_coordinates"></div>
+          <div class="frame__content frame__content_coordinates">
+            <div id="map" class="map"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="contacts">
+        <h1 class="title title_contacts">Связаться с нами</h1>
+        <div class="contacts__wrap">
+          <p class="contacts__phone">Телефон: <a href="tel:+78312410000" class="contacts__link">(831)241-00-00</a>
+          </p>
+          <p class="contacts__mail">Email: <a href="mailto:tattoo-art@mail.ru" class="contacts__link">tattoo-art@mail.ru</a></p>
+          <span class="contacts__subtitle">Мы в социальных сетях</span>
+          <div class="contacts__social">
+
+            <a class="contacts__link contacts__link_svg" href="https://www.facebook.com/" target="_blank">
+              <svg class="contacts__svg">
+                <use xlink:href="./styles\img\symbol.svg#contacts__facebook"></use>
+              </svg>
+            </a>
+            <a class="contacts__link contacts__link_svg" href="https://www.instagram.com/" target="_blank">
+              <svg class="contacts__svg contacts__svg_inst">
+                <use xlink:href="./styles\img\symbol.svg#contacts__instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="request" id="request">
+        <h1 class="request__title">Запишись сейчас и получи <span class="request__title_accent">скидку 20%</span> на
+          работу мастера!</h1>
+
+        <form class="request__form" action="mail.php" method="POST">
+          <label class="request__label">
+            <span class="request__punct">Фамилия Имя</span>
+            <input type="text" class="request__name request__input" name="fullname">
+          </label>
+          <label class="request__label request__label_phone">
+            <span class="request__punct">Телефон</span>
+            <input type="tel" class="request__phone request__input" name="phone" placeholder="+7(999) 999-9999">
+          </label>
+          <button type="submit" class="request__button button">Записаться</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./scripts/app.js"></script>
+
+  </body>
+
+</html>
