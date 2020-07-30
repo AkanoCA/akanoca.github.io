@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avantage</title>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ff057336-5844-4409-909c-8ac516f717da&lang=ru_RU"></script>
+    <link rel="stylesheet" href="./styles/app.css">
+  </head>
+
+  <body class="body body_theme_chairs body_faq">
+    <svg style="position:absolute;top:0;left:0;width:1px;height:1px;visibility:hidden;opacity:0;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol viewBox="0 0 5120 5120" id="calculator__arrow-left" xmlns="http://www.w3.org/2000/svg">
+        <g fill="var(--primary-color, #333333)">
+          <path d="M2495 4924c-375-37-639-109-930-254-495-245-871-621-1115-1115-177-357-253-682-253-1085-1-290 32-510 113-763C603 792 1401 134 2360 14c132-16 447-19 570-4 454 53 857 215 1227 491 126 94 368 336 462 462 276 370 438 773 491 1227 15 123 12 438-4 570-69 552-305 1041-694 1433-459 465-1045 717-1702 731-96 2-193 2-215 0zm469-389c693-106 1289-551 1591-1188 135-285 196-558 196-881 0-475-142-894-433-1279-79-105-280-306-385-385-301-227-632-366-995-417-149-21-422-21-564 0-459 67-868 272-1193 596-823 824-824 2136-1 2959 344 344 788 556 1275 609 117 13 383 5 509-14z" />
+          <path d="M1790 3005l-545-545 545-545 545-545h287c159 0 288 3 288 7 0 5-174 182-387 395l-388 388h1805v600H2125l395 395 395 395h-580l-545-545z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="calculator__arrow-right" xmlns="http://www.w3.org/2000/svg">
+        <g fill="var(--primary-color, #333333)">
+          <path d="M2175 5109c-441-54-848-218-1212-490-126-94-368-336-462-462-276-370-438-773-491-1227-15-123-12-438 4-570C134 1401 792 603 1707 310c253-81 473-114 763-113 403 0 728 76 1085 253 494 244 871 621 1115 1115 177 357 253 682 253 1085 1 290-32 510-113 763-293 915-1091 1573-2050 1693-125 15-468 17-585 3zm570-375c452-62 868-270 1194-595 823-824 824-2136 1-2959s-2135-822-2959 1c-324 325-529 734-596 1193-21 142-21 415 0 564 51 363 190 694 417 995 79 105 280 306 385 385 458 346 1006 492 1558 416z" />
+          <path d="M2210 3743c0-5 174-182 387-395l388-388H1180v-600h1815l-395-395-395-395h580l545 545 545 545-545 545-545 545h-287c-159 0-288-3-288-7z" />
+        </g>
+      </symbol>
+      <symbol fill="none" viewBox="0 0 30 30" id="contacts__mail" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 4.25v21.5h30V4.25H0zm18.313 11.032l-2.723 2.736a.866.866 0 0 1-1.166.013l-2.737-2.749.024-.024L1.823 5.25h26.36l-9.895 10.009.024.023zm-8.051-.015L1 24.177V5.962l9.262 9.305zm.705.708l2.761 2.775c.355.33.81.496 1.267.496.462 0 .925-.17 1.29-.51l2.748-2.761 9.119 8.775H1.843l9.124-8.775zm8.771-.708L29 5.961v18.216l-9.262-8.91z" fill="#000" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 30 30" id="contacts__phone" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#dclip0)">
+          <path d="M29.935 23.244c-.084-.255-.624-.632-1.619-1.128-.27-.157-.653-.37-1.15-.64-.497-.27-.948-.518-1.353-.746a45.478 45.478 0 0 1-1.14-.66 27.848 27.848 0 0 0-.532-.373 5.98 5.98 0 0 0-.757-.458 1.394 1.394 0 0 0-.607-.15c-.285 0-.64.203-1.065.608-.426.405-.817.845-1.172 1.321s-.731.916-1.129 1.321c-.398.405-.725.608-.98.608-.128 0-.288-.036-.48-.107a4.953 4.953 0 0 1-.437-.18c-.099-.05-.269-.15-.51-.3-.243-.148-.377-.23-.406-.244-1.945-1.08-3.614-2.316-5.007-3.708-1.391-1.392-2.627-3.06-3.707-5.007a12.383 12.383 0 0 0-.245-.405 7.692 7.692 0 0 1-.298-.511c-.05-.1-.11-.245-.181-.437a1.441 1.441 0 0 1-.107-.48c0-.255.203-.582.608-.98.404-.397.845-.774 1.32-1.128.477-.355.917-.746 1.322-1.172.404-.426.607-.781.607-1.065 0-.199-.05-.402-.15-.607a5.927 5.927 0 0 0-.457-.757 28.34 28.34 0 0 0-.374-.533 46.763 46.763 0 0 1-.66-1.14 107.56 107.56 0 0 1-.746-1.352 50.66 50.66 0 0 0-.639-1.15C7.387.688 7.011.148 6.755.063 6.655.021 6.506 0 6.308 0c-.384 0-.885.07-1.502.213-.619.142-1.105.291-1.46.448-.71.298-1.463 1.164-2.259 2.599C.363 4.595.001 5.916.001 7.222c0 .384.025.756.074 1.119.05.362.139.77.267 1.225.128.455.23.792.309 1.012.078.22.223.614.436 1.183.213.568.341.916.384 1.044.497 1.392 1.086 2.634 1.768 3.728 1.122 1.818 2.652 3.697 4.591 5.636 1.94 1.939 3.818 3.47 5.636 4.592 1.094.681 2.337 1.27 3.729 1.768.128.043.475.17 1.043.384.569.213.963.358 1.183.437.22.078.558.18 1.012.309.455.128.863.217 1.225.267.362.049.735.074 1.119.074 1.306 0 2.627-.362 3.963-1.087 1.434-.795 2.3-1.548 2.598-2.259.157-.354.306-.84.448-1.459.142-.618.213-1.118.213-1.502 0-.2-.02-.348-.064-.449z" fill="#000" />
+        </g>
+        <defs>
+          <clipPath id="dclip0">
+            <path fill="#fff" d="M0 0h30v30H0z" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="gallery__arrow-l" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#fcd720">
+          <path d="M1890 5107c-19-5-102-32-184-60-155-51-239-88-371-162-27-15-72-40-100-54-27-14-61-36-75-48-14-13-28-23-33-23-15 0-179-123-281-210-161-138-394-414-484-572-11-18-45-77-76-130s-56-99-56-102c0-2-20-46-44-98-24-51-49-109-55-128s-22-69-37-110c-14-41-40-129-57-195L6 3095l-3-480-2-480 28-115c16-63 40-153 54-200 24-79 33-105 83-230 62-155 199-390 349-595 57-79 309-334 410-415 356-287 761-470 1220-551 151-27 508-37 677-20 215 22 467 83 663 160 251 98 561 278 711 414 23 20 44 37 47 37 7 0 229 220 277 275 20 22 49 58 65 80 17 22 42 54 57 70 16 17 28 36 28 43s7 15 15 18c8 4 15 10 15 15 0 4 25 46 55 93 140 214 247 467 328 769l32 122v980l-27 105c-30 115-79 278-99 325-6 17-13 35-15 40-1 6-13 35-27 65-13 30-25 58-26 62-2 13-101 200-133 253-66 107-87 137-223 313-53 70-240 261-315 323-36 29-67 56-70 59-3 4-27 22-55 40-27 19-56 40-63 47s-34 25-60 40-60 36-77 47c-163 113-423 226-675 295-72 20-98 21-700 20-407-1-637-5-660-12zm809-237c422-29 813-161 1141-384 41-28 81-57 89-64 8-8 39-32 70-55 54-40 261-241 311-302 14-17 53-68 88-115 34-47 66-90 71-96 6-7 8-14 6-16s7-17 21-33c45-53 190-363 233-499 23-71 44-143 47-160 3-16 6-32 8-35s7-24 10-46c4-22 11-56 16-75 20-74 29-233 26-435-2-115-6-219-8-230-3-11-9-47-12-80-4-33-11-73-16-90-5-16-11-41-14-55-15-86-66-252-113-365-59-143-199-399-233-425-3-3-18-25-32-50-15-25-38-57-52-72s-26-32-26-38c0-5-7-10-17-10-9 0-14-3-10-6 10-10-152-179-263-273-30-25-66-56-80-68-14-13-28-23-32-23-3 0-13-6-20-13-27-27-193-130-287-179-268-138-489-207-801-248-136-19-441-16-565 5-125 21-170 29-240 46-161 40-295 89-460 170-125 62-190 98-193 109-2 6-8 10-14 10-10 0-160 102-184 124-6 6-29 25-50 41-90 70-204 180-262 254-15 19-44 53-65 75-21 23-54 64-73 93s-39 55-44 58c-6 4-8 11-5 16 4 5 2 9-3 9-24 0-187 309-238 450-29 83-73 223-80 260-3 14-10 45-15 70-15 63-18 79-25 124-3 22-7 43-9 46-8 13-19 227-18 347 2 113 20 300 38 383 3 14 8 38 11 54 2 16 6 32 8 35s7 22 10 41c8 51 81 269 115 345 17 36 30 66 30 68-1 1 17 36 39 77s48 91 58 110c11 19 21 37 24 40s19 26 35 52c17 27 33 48 38 48 4 0 7 5 7 11 0 14 81 122 156 205 67 77 165 172 239 233 56 47 52 44 120 94 28 20 55 41 62 47 6 5 56 36 111 69 180 107 355 183 557 239 184 52 315 72 600 90 11 1 85-3 164-8z" />
+          <path d="M2813 3781c-22-10-1099-1085-1113-1111-20-40-21-92-1-133 27-55 1062-1092 1123-1125 52-28 93-25 149 13 61 40 83 112 57 186-8 24-151 173-485 505-260 259-473 476-473 482 0 11 909 922 920 922 14 0 40 73 40 112 0 62-18 101-59 128-39 26-121 36-158 21z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="gallery__arrow-r" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#fcd720">
+          <path d="M1890 5107c-124-37-340-112-379-131-227-113-313-161-426-240-55-38-105-75-111-80-6-6-29-24-50-41-109-84-286-262-386-386-69-88-198-271-198-284 0-3-12-24-27-48-45-70-160-310-183-382-7-22-19-54-27-72-7-18-33-103-56-190L5 3095l-2-480-2-480 28-115c16-63 40-153 54-200 24-79 33-105 83-230 62-155 199-390 349-595 57-79 309-334 410-415 356-287 760-470 1220-551 171-30 528-38 715-15 575 70 1108 329 1524 740 87 86 179 189 236 266 14 18 31 39 38 46 6 7 12 17 12 23 0 5 8 15 18 20 9 6 14 11 10 11s17 35 46 78c78 114 171 298 248 491 37 94 104 334 116 416 4 28 7 259 7 515v465l-27 105c-29 114-79 277-99 325-6 17-13 35-15 40-1 6-13 35-27 65-13 30-25 58-26 62-2 13-101 200-133 253-66 107-87 137-223 313-53 70-240 261-315 323-36 29-67 56-70 59-3 4-27 22-55 40-27 19-56 40-63 47s-34 25-60 40-60 36-77 47c-163 113-423 226-675 295-72 20-98 21-700 20-406-1-637-5-660-12zm970-253c234-30 474-101 689-205 155-74 246-129 386-234 96-71 322-282 365-340 8-11 38-49 66-85 44-55 117-162 160-235 86-143 227-482 248-599 3-14 7-34 10-44 3-9 7-28 10-42 2-14 12-65 22-115 13-69 17-145 18-325 1-129-3-264-7-300-14-114-19-144-28-175-4-16-10-41-13-55-15-86-66-252-113-365-59-143-199-399-233-425-3-3-18-25-32-50-15-25-38-57-52-72s-26-32-26-38c0-5-7-10-17-10-9 0-14-3-10-6 10-10-152-179-263-273-30-25-66-56-80-68-14-13-28-23-32-23-3 0-13-6-20-13-27-27-193-130-287-179-239-123-479-204-701-234-19-3-55-9-80-13-123-21-453-19-580 3-14 3-47 7-75 11-27 3-86 15-130 26-44 10-89 21-100 23-40 8-241 78-262 92-13 8-23 12-23 10s-60 26-132 63c-111 56-264 149-328 198-204 158-297 249-446 435-33 40-63 80-69 89-5 9-32 49-59 90-120 180-251 484-292 679-3 14-10 45-15 70-6 25-13 55-15 67-2 13-6 35-9 50-39 207-35 575 10 783 3 14 8 38 11 54 2 16 6 32 8 35s7 22 10 41c16 99 113 355 187 495 20 39 45 86 55 105 11 19 21 37 24 40s19 26 35 52c17 27 33 48 38 48 4 0 7 5 7 11 0 14 81 122 156 205 67 77 165 172 239 233 56 47 52 44 120 94 28 20 55 41 62 47 6 5 56 36 111 69 447 267 958 372 1482 305z" />
+          <path d="M2220 3792c-89-12-131-54-138-139-4-44 0-59 20-91 14-20 233-244 486-497 254-253 462-464 462-469s-213-221-473-481c-416-415-475-478-484-514-20-76 15-149 91-188 40-21 106-12 147 20 52 40 1075 1070 1089 1096 21 40 14 118-13 154-37 49-1063 1074-1088 1088-32 17-71 25-99 21z" />
+        </g>
+      </symbol>
+      <symbol fill="none" viewBox="0 0 36 23" id="header__burger" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#000" stroke-width="2" d="M.993 1.486h35M.993 11.486h35M1 21.486h35" />
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="services__arrow-l" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#fcd720">
+          <path d="M1890 5107c-19-5-102-32-184-60-155-51-239-88-371-162-27-15-72-40-100-54-27-14-61-36-75-48-14-13-28-23-33-23-15 0-179-123-281-210-161-138-394-414-484-572-11-18-45-77-76-130s-56-99-56-102c0-2-20-46-44-98-24-51-49-109-55-128s-22-69-37-110c-14-41-40-129-57-195L6 3095l-3-480-2-480 28-115c16-63 40-153 54-200 24-79 33-105 83-230 62-155 199-390 349-595 57-79 309-334 410-415 356-287 761-470 1220-551 151-27 508-37 677-20 215 22 467 83 663 160 251 98 561 278 711 414 23 20 44 37 47 37 7 0 229 220 277 275 20 22 49 58 65 80 17 22 42 54 57 70 16 17 28 36 28 43s7 15 15 18c8 4 15 10 15 15 0 4 25 46 55 93 140 214 247 467 328 769l32 122v980l-27 105c-30 115-79 278-99 325-6 17-13 35-15 40-1 6-13 35-27 65-13 30-25 58-26 62-2 13-101 200-133 253-66 107-87 137-223 313-53 70-240 261-315 323-36 29-67 56-70 59-3 4-27 22-55 40-27 19-56 40-63 47s-34 25-60 40-60 36-77 47c-163 113-423 226-675 295-72 20-98 21-700 20-407-1-637-5-660-12zm809-237c422-29 813-161 1141-384 41-28 81-57 89-64 8-8 39-32 70-55 54-40 261-241 311-302 14-17 53-68 88-115 34-47 66-90 71-96 6-7 8-14 6-16s7-17 21-33c45-53 190-363 233-499 23-71 44-143 47-160 3-16 6-32 8-35s7-24 10-46c4-22 11-56 16-75 20-74 29-233 26-435-2-115-6-219-8-230-3-11-9-47-12-80-4-33-11-73-16-90-5-16-11-41-14-55-15-86-66-252-113-365-59-143-199-399-233-425-3-3-18-25-32-50-15-25-38-57-52-72s-26-32-26-38c0-5-7-10-17-10-9 0-14-3-10-6 10-10-152-179-263-273-30-25-66-56-80-68-14-13-28-23-32-23-3 0-13-6-20-13-27-27-193-130-287-179-268-138-489-207-801-248-136-19-441-16-565 5-125 21-170 29-240 46-161 40-295 89-460 170-125 62-190 98-193 109-2 6-8 10-14 10-10 0-160 102-184 124-6 6-29 25-50 41-90 70-204 180-262 254-15 19-44 53-65 75-21 23-54 64-73 93s-39 55-44 58c-6 4-8 11-5 16 4 5 2 9-3 9-24 0-187 309-238 450-29 83-73 223-80 260-3 14-10 45-15 70-15 63-18 79-25 124-3 22-7 43-9 46-8 13-19 227-18 347 2 113 20 300 38 383 3 14 8 38 11 54 2 16 6 32 8 35s7 22 10 41c8 51 81 269 115 345 17 36 30 66 30 68-1 1 17 36 39 77s48 91 58 110c11 19 21 37 24 40s19 26 35 52c17 27 33 48 38 48 4 0 7 5 7 11 0 14 81 122 156 205 67 77 165 172 239 233 56 47 52 44 120 94 28 20 55 41 62 47 6 5 56 36 111 69 180 107 355 183 557 239 184 52 315 72 600 90 11 1 85-3 164-8z" />
+          <path d="M2813 3781c-22-10-1099-1085-1113-1111-20-40-21-92-1-133 27-55 1062-1092 1123-1125 52-28 93-25 149 13 61 40 83 112 57 186-8 24-151 173-485 505-260 259-473 476-473 482 0 11 909 922 920 922 14 0 40 73 40 112 0 62-18 101-59 128-39 26-121 36-158 21z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="services__arrow-r" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#fcd720">
+          <path d="M1890 5107c-124-37-340-112-379-131-227-113-313-161-426-240-55-38-105-75-111-80-6-6-29-24-50-41-109-84-286-262-386-386-69-88-198-271-198-284 0-3-12-24-27-48-45-70-160-310-183-382-7-22-19-54-27-72-7-18-33-103-56-190L5 3095l-2-480-2-480 28-115c16-63 40-153 54-200 24-79 33-105 83-230 62-155 199-390 349-595 57-79 309-334 410-415 356-287 760-470 1220-551 171-30 528-38 715-15 575 70 1108 329 1524 740 87 86 179 189 236 266 14 18 31 39 38 46 6 7 12 17 12 23 0 5 8 15 18 20 9 6 14 11 10 11s17 35 46 78c78 114 171 298 248 491 37 94 104 334 116 416 4 28 7 259 7 515v465l-27 105c-29 114-79 277-99 325-6 17-13 35-15 40-1 6-13 35-27 65-13 30-25 58-26 62-2 13-101 200-133 253-66 107-87 137-223 313-53 70-240 261-315 323-36 29-67 56-70 59-3 4-27 22-55 40-27 19-56 40-63 47s-34 25-60 40-60 36-77 47c-163 113-423 226-675 295-72 20-98 21-700 20-406-1-637-5-660-12zm970-253c234-30 474-101 689-205 155-74 246-129 386-234 96-71 322-282 365-340 8-11 38-49 66-85 44-55 117-162 160-235 86-143 227-482 248-599 3-14 7-34 10-44 3-9 7-28 10-42 2-14 12-65 22-115 13-69 17-145 18-325 1-129-3-264-7-300-14-114-19-144-28-175-4-16-10-41-13-55-15-86-66-252-113-365-59-143-199-399-233-425-3-3-18-25-32-50-15-25-38-57-52-72s-26-32-26-38c0-5-7-10-17-10-9 0-14-3-10-6 10-10-152-179-263-273-30-25-66-56-80-68-14-13-28-23-32-23-3 0-13-6-20-13-27-27-193-130-287-179-239-123-479-204-701-234-19-3-55-9-80-13-123-21-453-19-580 3-14 3-47 7-75 11-27 3-86 15-130 26-44 10-89 21-100 23-40 8-241 78-262 92-13 8-23 12-23 10s-60 26-132 63c-111 56-264 149-328 198-204 158-297 249-446 435-33 40-63 80-69 89-5 9-32 49-59 90-120 180-251 484-292 679-3 14-10 45-15 70-6 25-13 55-15 67-2 13-6 35-9 50-39 207-35 575 10 783 3 14 8 38 11 54 2 16 6 32 8 35s7 22 10 41c16 99 113 355 187 495 20 39 45 86 55 105 11 19 21 37 24 40s19 26 35 52c17 27 33 48 38 48 4 0 7 5 7 11 0 14 81 122 156 205 67 77 165 172 239 233 56 47 52 44 120 94 28 20 55 41 62 47 6 5 56 36 111 69 447 267 958 372 1482 305z" />
+          <path d="M2220 3792c-89-12-131-54-138-139-4-44 0-59 20-91 14-20 233-244 486-497 254-253 462-464 462-469s-213-221-473-481c-416-415-475-478-484-514-20-76 15-149 91-188 40-21 106-12 147 20 52 40 1075 1070 1089 1096 21 40 14 118-13 154-37 49-1063 1074-1088 1088-32 17-71 25-99 21z" />
+        </g>
+      </symbol>
+      <symbol fill="none" viewBox="0 0 416 79" id="way__line-1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 0c0 11.842 18.065 42.293 47.67 39.474C171.779 35.902 366 31 386 35c17.158 3.432 29.5 17.05 29.5 25.5V79" stroke="#000" stroke-dasharray="10 10" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 421 54" id="way__line-2" xmlns="http://www.w3.org/2000/svg">
+        <path d="M419.5.5c1 8.5-3.8 28.4-19 36-15.2 7.6-229.333-14.333-352-17.5C19 16.5 1 43.5 1 54" stroke="#000" stroke-dasharray="10 10" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 390 59" id="way__line-3" xmlns="http://www.w3.org/2000/svg">
+        <path d="M.702 1c-1.202 16.5 11.375 36.644 36 46 24.625 9.356 240.319 14.776 345.5 6.329" stroke="#000" stroke-dasharray="10 10" />
+      </symbol>
+    </svg>
+
+    <header class="header header_pages">
+
+      <!-- BAR -->
+      <div class="header__bar bar">
+        <img src="./static/logo/logo.png" alt="Авантаж - надежность, качество, гарантия" class="bar__logo logo">
+
+        <div class="header__call call">
+          <a href="tel:+73512236776" class="call__phone phone">+7 (351) 223-67-76</a>
+          <button class="call__call-back">Позвоните мне</button>
+        </div>
+      </div>
+
+      <div class="header__burger header__burger_pages burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+
+      <nav class="header__menu menu__pages menu">
+        <div class="menu__wrap">
+          <div class="menu__item">
+            <a href="https://akanoca.github.io/avantage/" class="menu__link">Главная</a>
+          </div>
+          <div class="menu__item">
+            <a href="/avantage/services" class="menu__link">Наши услуги</a>
+          </div>
+          <div class="menu__item">
+            <a href="/avantage/gallery" class="menu__link">Галерея работ</a>
+          </div>
+          <div class="menu__item">
+            <a href="/avantage/faq" class="menu__link">Вопрос-ответ</a>
+          </div>
+          <div class="menu__item">
+            <a href="/avantage/contacts" class="menu__link">Контакты</a>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+
+    <main class="main">
+
+      <div class="header__calculator calculator">
+
+        <div class="calculator__wrap">
+          <span class="calculator__close">&#10006;</span>
+          <h2 class="calculator__title title">Рассчитать стоимость</h2>
+          <div class="calculator__content">
+            <form action="#" class="calculator__form">
+              <div class="calculator__side-top">
+                <div class="calculator__housing">
+                  <span class="calculator__subtitle">Тип жилья</span>
+
+                  <div class="calculator__choice">
+                    <label class="calculator__check">
+                      <input type="radio" class="calculator__radio" name="housing" checked>
+                      <div class="calculator__name">Новостройка</div>
+                    </label>
+                    <label class="calculator__check">
+                      <input type="radio" class="calculator__radio" name="housing">
+                      <div class="calculator__name">Вторичное</div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="calculator__rooms">
+                  <span class="calculator__subtitle">Количество комнат</span>
+                  <div class="calculator__quantity">
+                    <svg class="calculator__svg calculator__svg_uncurrent calculator__arrow-l_js">
+                      <use xlink:href="./styles\img\symbol.svg#calculator__arrow-left"></use>
+                    </svg>
+                    <input type="text" class="calculator__room" value="1" readonly>
+                    <svg class="calculator__svg calculator__arrow-r_js">
+                      <use xlink:href="./styles\img\symbol.svg#calculator__arrow-right"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="calculator__necessary">
+                  <span class="calculator__subtitle">Необходимо</span>
+
+                  <div class="calculator__choice">
+                    <div class="calculator__grid">
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Отделка пола</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Отделка стен</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Потолок</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Перепланировка</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Шумоизоляция</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Сборка мебели</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Демонтаж</div>
+                      </label>
+                      <label class="calculator__check calculator__check_grid">
+                        <input type="checkbox" class="calculator__radio" name="housing">
+                        <div class="calculator__name">Сантехника</div>
+                      </label>
+                    </div>
+
+                    <div class="calculator__entry">
+                      <span class="calculator__subtitle calculator__subtitle_area">Площадь</span>
+                      <input type="text" class="calculator__data calculator__data_area" name="area" required>
+
+                      <span class="calculator__subtitle calculator__subtitle_ceiling">Высота потолков</span>
+                      <input type="text" class="calculator__data calculator__data_ceiling" name="ceiling" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calculator__side-bot">
+                <input type="text" class="calculator__user" placeholder="Имя" required>
+                <input type="text" class="calculator__phone" placeholder="+7 (_ _ _) _ _ _-_ _-_ _" required>
+                <label class="calculator__check calculator__check_politic">
+                  <input type="checkbox" class="calculator__radio calculator__radio_politic" name="personality" required>
+                  <div class="calculator__name calculator__name_politic">Я согласен на обработку персональных данных согласно Политике конфиденциальности</div>
+                </label>
+              </div>
+
+              <button type="submit" class="button calculator__button ">Расчитать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main__services services">
+
+        <div class="services__carousel">
+          <div class="services__wrap">
+            <!-- CARD 1 -->
+            <div class="services__card">
+              <div class="services__header">
+                <img class="services__img" src="./static/services/cosmetic.jpg" alt="">
+                <span class="services__title">Косметический ремонт</span>
+                <p class="services__subtitle">от <span class="services__subtitle_l">1990</span> &#8381;/м2</p>
+              </div>
+              <div class="services__list">
+                <span class="services__item">Демонтаж настенных и напольных покрытий</span>
+                <span class="services__item">Покраска потолка</span>
+                <span class="services__item">Оклейка стен обоями / покраска <br> стен</span>
+                <span class="services__item">Укладка напольного покрытия (Ламинат, паркет, плитка)</span>
+                <span class="services__item">Ремонт ванной и туалета (Укладка плитки / отделка ПВХ панелями)</span>
+                <span class="services__item">Монтаж сантехники и электрики</span>
+                <span class="services__item">Уборка после ремонта</span>
+              </div>
+              <button class="services__button button">Узнать стоимость</button>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="services__card">
+              <div class="services__header">
+                <img class="services__img" src="./static/services/capital.jpg" alt="">
+                <span class="services__title">капитальный ремонт</span>
+                <p class="services__subtitle">от <span class="services__subtitle_l">5990</span> &#8381;/м2</p>
+              </div>
+              <div class="services__list">
+                <span class="services__item">Демонтажные работы</span>
+                <span class="services__item">Перепланировка</span>
+                <span class="services__item">Выравнивание стен и полов</span>
+                <span class="services__item">Разводка водопровода и электропроводки</span>
+                <span class="services__item">Монтаж потолка (Натяжной / ГКЛ / штукатурка, шпаклевка)</span>
+                <span class="services__item">Оклейка стен обоями / покраска <br> стен</span>
+                <span class="services__item">Ремонт ванной и туалета</span>
+                <span class="services__item">Укладка напольного покрытия (Ламинат, паркет, плитка)</span>
+                <span class="services__item">Монтаж сантехники и электрики</span>
+                <span class="services__item">Уборка после ремонта</span>
+              </div>
+              <button class="services__button button">Узнать стоимость</button>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="services__card">
+              <div class="services__header">
+                <img class="services__img" src="./static/services/repair.jpg" alt="">
+                <span class="services__title">ремонт помещений</span>
+                <p class="services__subtitle">от <span class="services__subtitle_l">2990</span> &#8381;/м2</p>
+              </div>
+              <div class="services__list">
+                <span class="services__item">Демонтажные работы</span>
+                <span class="services__item">Выравнивание стен и полов</span>
+                <span class="services__item">Покраска потолка</span>
+                <span class="services__item">Оклейка стен обоями / покраска стен</span>
+                <span class="services__item">Укладка напольного покрытия<br> (Ламинат, паркет, плитка)</span>
+                <span class="services__item">Уборка после ремонта</span>
+              </div>
+              <button class="services__button button">Узнать стоимость</button>
+            </div>
+          </div>
+
+        </div>
+        <svg class="services__svg services__svg_arrow_l">
+          <use xlink:href="./styles\img\symbol.svg#services__arrow-l"> </use>
+        </svg>
+        <svg class="services__svg services__svg_arrow_r">
+          <use xlink:href="./styles\img\symbol.svg#services__arrow-r"> </use>
+        </svg>
+      </div>
+    </main>
+
+    <footer class="footer footer_main footer_contacts footer_faq">
+      <img src="./static/logo/logo.png" alt="Авантаж - надежность, качество, гарантия" class="footer__logo logo">
+
+      <a href="#" class="footer__link footer__link_confid">Политика конфиденциальности</a>
+      <a href="#" class="footer__link footer__link_agree">Пользователькое соглашение</a>
+      <a href="tel:+73512236776" class="footer__phone phone">+7 (351) 223-67-76</a>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/jquery.maskedinput.js"></script>
+    <script src="scripts/zepto.min.js"></script>
+    <script src="./scripts/app.js"></script>
+
+  </body>
+
+</html>
