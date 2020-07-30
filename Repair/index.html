@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME REPAIR</title>
+    <link rel="stylesheet" href="./styles/app.css">
+
+
+  </head>
+
+  <body class="body">
+    <svg style="position:absolute;top:0;left:0;width:1px;height:1px;visibility:hidden;opacity:0;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol viewBox="0 0 41 41" fill="none" id="accordion__accordion-arrow" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="21" cy="20" r="13.333" fill="var(--primary-color, #f1c65a)" />
+        <path d="M15 18l6 6 6-6" stroke="#fff" stroke-width=".7" />
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="bar__home" xmlns="http://www.w3.org/2000/svg">
+        <path d="M939 5087c-176-60-290-175-363-367-20-54-21-70-24-871l-3-816-79-7c-221-18-375-132-440-325-43-130-21-302 55-415 19-28 521-538 1117-1133C2469-112 2335 0 2570 0c135 0 136 0 210 36 73 34 101 61 1172 1132s1098 1099 1132 1172c36 74 36 75 36 210 0 134 0 137-34 205-80 165-215 253-413 270l-82 7-3 812c-4 898 0 841-70 981-63 124-223 246-361 275-35 7-212 10-534 8l-481-3-27-25c-57-53-55-27-55-702 0-343-3-640-6-661-11-61-63-138-118-172l-49-30h-632l-47 28c-53 31-100 92-117 152-7 27-11 242-11 675 0 616-1 636-20 668-11 18-34 41-52 52-32 19-51 20-518 20-476-1-486-1-551-23zm831-829c0-436 3-567 14-619 44-205 207-372 414-425 53-13 117-15 400-12 332 4 338 4 402 29 168 64 283 186 342 359 22 64 23 77 26 643l3 579 357-4 357-3 51-27c56-29 95-70 122-127 16-33 17-113 22-936 5-839 6-903 23-928 36-56 57-62 237-67 159-5 168-6 207-32 64-42 91-129 63-205-14-36-2124-2148-2166-2168-41-19-107-19-148 0-42 20-2152 2132-2166 2168-28 76-1 163 63 205 39 26 48 27 207 32 183 6 203 12 240 73 19 31 20 57 20 899 0 589 4 883 11 918 20 94 107 175 204 191 22 4 187 7 368 8l327 1v-552z" fill="var(--primary-color, #f9e19e)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 32 92" id="cards__next" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 91l29-45L1 1" stroke-width="2" stroke="var(--primary-color, #4B4B4B)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 32 92" id="cards__prev" xmlns="http://www.w3.org/2000/svg">
+        <path d="M31 91L2 46 31 1" stroke-width="2" stroke="var(--primary-color, #4B4B4B)" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 611 105" id="heading__remont" xmlns="http://www.w3.org/2000/svg">
+        <path d="M103.108 64.704c0-6.72 1.008-12.576 3.024-17.568 2.112-5.088 4.848-9.312 8.208-12.672 3.36-3.36 7.2-5.904 11.52-7.632 4.416-1.728 8.928-2.592 13.536-2.592 10.752 0 19.248 3.312 25.488 9.936 6.24 6.528 9.359 16.176 9.359 28.944 0 1.248-.047 2.64-.143 4.176-.097 1.44-.192 2.736-.288 3.888H125.14c.48 4.416 2.543 7.92 6.191 10.512 3.648 2.592 8.544 3.888 14.689 3.888 3.935 0 7.776-.336 11.52-1.008 3.84-.768 6.96-1.68 9.36-2.736l2.88 17.424c-1.152.576-2.688 1.152-4.608 1.728-1.92.576-4.08 1.056-6.48 1.44-2.304.48-4.8.864-7.488 1.152a75.642 75.642 0 0 1-8.064.432c-6.816 0-12.768-1.008-17.856-3.024-4.992-2.016-9.168-4.752-12.528-8.208-3.264-3.552-5.712-7.728-7.344-12.528-1.536-4.8-2.304-9.984-2.304-15.552zm50.4-8.208a20.116 20.116 0 0 0-1.008-5.328 11.878 11.878 0 0 0-2.449-4.608c-1.056-1.344-2.447-2.448-4.175-3.312-1.632-.864-3.696-1.296-6.192-1.296-2.4 0-4.464.432-6.192 1.296-1.728.768-3.168 1.824-4.32 3.168-1.152 1.344-2.064 2.928-2.736 4.752a33.08 33.08 0 0 0-1.296 5.328h28.368zM230.833 58.368c-.192 3.36-.384 7.008-.576 10.944-.192 3.936-.384 7.92-.576 11.952-.096 3.936-.24 7.728-.432 11.376-.096 3.552-.192 6.672-.288 9.36h-20.88c.192-5.28.48-11.232.864-17.856.48-6.624.96-13.344 1.44-20.16.576-6.912 1.152-13.632 1.728-20.16.672-6.528 1.296-12.384 1.872-17.568h17.856c4.128 6.72 7.92 13.68 11.376 20.88 3.456 7.2 7.104 15.12 10.944 23.76 4.032-9.216 7.968-17.712 11.808-25.488 3.84-7.872 7.296-14.256 10.368-19.152h18.144c.672 5.184 1.296 11.04 1.872 17.568a608.922 608.922 0 0 1 1.728 20.16 765.689 765.689 0 0 1 1.44 20.16c.384 6.624.672 12.576.864 17.856h-21.312a850.406 850.406 0 0 0-.864-22.32c-.288-7.392-.576-14.544-.864-21.456l-15.84 34.848h-14.832l-15.84-34.704zM408.636 63.984c0 5.952-.864 11.424-2.592 16.416-1.728 4.896-4.224 9.12-7.488 12.672-3.264 3.456-7.2 6.144-11.808 8.064-4.512 1.92-9.6 2.88-15.264 2.88-5.568 0-10.656-.96-15.264-2.88-4.512-1.92-8.4-4.608-11.664-8.064-3.264-3.552-5.808-7.776-7.632-12.672-1.824-4.992-2.736-10.464-2.736-16.416s.912-11.376 2.736-16.272c1.92-4.896 4.512-9.072 7.776-12.528 3.36-3.456 7.296-6.144 11.808-8.064 4.608-1.92 9.6-2.88 14.976-2.88 5.472 0 10.464.96 14.976 2.88 4.608 1.92 8.544 4.608 11.808 8.064 3.264 3.456 5.808 7.632 7.632 12.528 1.824 4.896 2.736 10.32 2.736 16.272zm-21.888 0c0-6.624-1.344-11.808-4.032-15.552-2.592-3.84-6.336-5.76-11.232-5.76-4.896 0-8.688 1.92-11.376 5.76-2.688 3.744-4.032 8.928-4.032 15.552 0 6.624 1.344 11.904 4.032 15.84 2.688 3.84 6.48 5.76 11.376 5.76 4.896 0 8.64-1.92 11.232-5.76 2.688-3.936 4.032-9.216 4.032-15.84zM509.209 102h-21.456V72.048h-22.32V102h-21.456V26.256h21.456V54.48h22.32V26.256h21.456V102zM610.696 43.824h-24.192V102h-21.456V43.824h-24.192V26.256h69.84v17.568zM.5 101.5H24v-33c14.5.5 31-1 40-7 19.5-10 16-42 4-51C54.5-.5 24-1 .5 4v16.5H24C51.15 18.85 54.5 25 54.5 37c-2 11.5-11 12.5-30.5 12.5H.5v52z" fill="#FFFEFE" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 24 10" id="select__arrow-down" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1l11 8 11-8" stroke="var(--primary-color, #000)" />
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="social__instagram" xmlns="http://www.w3.org/2000/svg">
+        <g fill="var(--primary-color, #ffffff)">
+          <path d="M1145 5104c-182-32-381-113-545-222-48-32-133-105-195-167-163-163-269-334-340-548-67-204-65-149-65-1607S-2 1157 65 953c72-215 177-386 340-548C568 242 739 136 953 65 1157-2 1102 0 2560 0s1403-2 1606 65c124 41 274 115 374 186 41 29 122 100 180 158 158 158 265 332 335 544 67 204 65 149 65 1607s2 1403-65 1607c-71 214-177 385-340 548s-334 269-548 340c-205 67-148 65-1616 64-1089-1-1340-3-1406-15zm2661-294c61-5 140-16 175-25 349-87 629-332 758-663 71-182 66-58 66-1562V1205l-22-81c-67-242-206-450-396-594-137-105-278-168-457-207-80-17-163-18-1370-18s-1290 1-1370 18c-449 97-774 420-864 859-14 68-16 230-16 1378 0 1404-2 1356 52 1515 137 405 512 700 933 735 131 11 2380 11 2511 0z" />
+          <path d="M2320 3945c-277-51-527-177-727-368-122-117-208-233-283-379-106-210-150-395-150-638s44-428 150-638c202-396 575-670 1019-747 111-20 353-19 467 0 135 23 273 70 402 135 396 202 670 575 747 1019 19 109 19 353 0 462-34 197-111 391-221 557-72 107-213 255-323 338-165 124-397 223-605 259-110 19-371 19-476 0zm437-310c445-84 794-433 878-878 19-102 19-292 0-394-84-445-433-794-878-878-102-19-292-19-394 0-445 84-794 433-878 878-19 102-19 292 0 394 84 442 429 790 871 877 95 19 303 19 401 1zM3853 1471c-95-35-173-101-227-193-34-60-47-117-47-207 0-223 162-395 386-409 260-16 459 183 443 443-11 171-111 305-271 364-76 28-209 29-284 2zm197-304c60-46 66-113 16-163-39-39-85-45-126-17-40 27-49 45-50 91 0 62 40 102 102 102 24 0 50-6 58-13z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 5120 5120" id="social__vk" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2309 4140c-617-109-1212-592-1711-1389-257-410-502-965-579-1311-23-105-24-230-3-293s82-129 146-158c53-24 53-24 443-24h390l50 25c64 32 127 94 161 162 15 29 53 124 85 210 102 274 200 491 318 703 78 139 200 326 253 388l33 38 2-393c3-467 4-459-99-615-82-123-98-164-98-250 0-111 51-193 153-243l63-31 509 3c501 3 511 3 550 25 53 28 89 68 114 123 39 89 43 156 40 575-1 220-2 445 0 500l2 100 45-50c185-206 437-628 608-1018 49-112 106-176 194-219l67-33 371-3c360-3 373-2 429 19 169 63 221 219 147 437-64 186-257 534-506 912-67 102-143 214-169 250s-46 70-45 76c2 6 89 103 194 215 337 358 498 562 591 746 55 110 57 116 61 208 4 75 1 106-13 143-24 62-94 134-158 163-52 24-54 24-442 24h-390l-65-32c-84-41-147-98-321-291-181-199-310-326-424-414-86-67-162-114-171-105-3 2-6 139-8 303-3 335-4 340-76 418-48 52-131 91-236 111-110 21-370 18-505-5zm456-319l30-7 6-305c6-332 11-368 68-446 55-76 202-112 328-80 181 47 408 221 693 534 221 242 281 299 326 312 47 13 542 15 563 2 45-29-222-383-544-721-276-289-294-316-303-430-7-101 15-147 215-446 98-148 230-354 292-458 113-188 234-423 243-471l5-25-261 1c-143 1-272 4-286 8-15 4-32 21-42 41-9 19-68 141-131 270-164 336-323 593-497 803-219 265-469 351-594 205-72-84-70-66-74-724l-3-591-361-7c-198-3-363-5-365-3s15 32 37 65c50 75 94 191 110 292 8 53 11 223 8 570l-3 495-32 66c-39 78-82 113-162 130-113 24-210-20-346-156-233-234-507-729-711-1284-29-79-60-151-69-160-14-14-52-16-290-16-150 0-277 3-280 7-17 17 55 267 142 488 63 161 266 569 363 730 170 281 345 512 535 709 309 319 587 495 909 576 148 37 384 50 481 26z" fill="var(--primary-color, #ffffff)" />
+      </symbol>
+    </svg>
+    <header class="header header__theme_room" id="header">
+      <div class="bar">
+        <div class="bar__wrap">
+          <div class="bar__side-l">
+            <a class="logo" href="#header">
+              <svg class="logo__svg">
+                <use xlink:href="./styles\img\symbol.svg#bar__home" />
+              </svg>
+              <span class="logo__text">home repair</span>
+            </a>
+            <div class="menu">
+              <a class="menu__link" href="#advantages">О нас</a>
+              <a class="menu__link" href="#services">Услуги</a>
+              <a class="menu__link" href="#">Контакты</a>
+            </div>
+          </div>
+          <div class="bar__side-r">
+            <a class="bar__phone" href="tel:+73452533084">+7 (3452) 533-084 </a>
+            <a class="bar__call" href="#">Заказать звонок </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="locator">
+        <div class="locator__wrap">
+          <div class="locator__radius locator__radius_s"></div>
+          <div class="locator__radius locator__radius_m"></div>
+          <div class="locator__radius locator__radius_l"></div>
+          <div class="locator__radius locator__radius_xl"></div>
+          <div class="locator__radius locator__radius_xxl"></div>
+
+          <div class="locator__item locator__item_1">
+            <div class="locator__circle">
+              <div class="locator__point"></div>
+            </div>
+            <span class="locator__text">От 1990 руб м2</span>
+          </div>
+          <div class="locator__item locator__item_2">
+            <div class="locator__circle">
+              <div class="locator__point"></div>
+            </div>
+            <span class="locator__text">Гарантия <br> на ремонт 5 ЛЕТ </span>
+          </div>
+          <div class="locator__item locator__item_3">
+            <div class="locator__circle">
+              <div class="locator__point"></div>
+            </div>
+            <span class="locator__text">Закупаем материалы <br> по оптовым ценам </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="heading heading_pos">
+          <svg class="heading__svg">
+            <use xlink:href="./styles\img\symbol.svg#heading__remont" />
+          </svg>
+          <span class="heading__text">квартир в Тюмени под ключ</span>
+        </div>
+        <button class="button button_header">Расчитать стоимость</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="advantages" id="advantages">
+        <div class="container">
+          <div class="puls">
+            <div class="puls__wrap">
+              <div class="puls__circle puls__circle_s"></div>
+              <div class="puls__circle puls__circle_m"></div>
+              <div class="puls__circle puls__circle_l"></div>
+            </div>
+          </div>
+
+          <h1 class="title">Почему клиенты выбирают нас?</h1>
+          <div class="advantages__item advantages__item_center">
+            <div class="advantages__wrap">
+              <img class="advantages__img advantages__img_center" src="./static/advantages/woman-bord.png" alt="Женщина с инструментами">
+              <div class="advantages__descrip">
+                <span class="advantages__title">Работаем с 2013 года</span>
+                <p class="advantages__text advantages__text_center">Выполнили ремонт более чем на 350 объектах
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__item advantages__item_budget">
+            <img class="advantages__img advantages__img_budget" src="./static/advantages/pig.png" alt="Свинка-копилка">
+            <span class="advantages__title">Прозрачный бюджет</span>
+            <p class="advantages__text">
+              Вы платите поэтапно и точно знаете, на что пошел каждый рубль
+            </p>
+          </div>
+          <div class="advantages__item advantages__item_deadline">
+            <img class="advantages__img" src="./static/advantages/keys.png" alt="Ключи">
+            <span class="advantages__title">Четкие сроки</span>
+            <p class="advantages__text">Закончим ремонт точно по графику, сроки прописаны в договоре</p>
+          </div>
+          <div class="advantages__item advantages__item_foreman">
+            <img class="advantages__img" src="./static/advantages/man.png" alt="Прораб">
+            <span class="advantages__title advantages__title_foreman">Личный прораб</span>
+            <p class="advantages__text advantages__text_foreman">У каждого клиента есть личный прораб, который всегда на связи</p>
+          </div>
+          <div class="advantages__item advantages__item_masters">
+            <img class="advantages__img" src="./static/advantages/helmet.png" alt="Каска">
+            <span class="advantages__title advantages__title_masters">Опытные мастера</span>
+            <p class="advantages__text advantages__text_masters">Собственные бригады мастеров со стажем от 5 лет. Не берем нелегалов!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services services_theme_room" id="services">
+
+        <h1 class="title title_services">Услуги котрые мы предоставляем</h1>
+
+        <div class="cards cards_pos">
+
+          <div class="carousel">
+            <div class="carousel__wrap">
+              <div class="carousel__item">
+                <!-- CARD 1-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/cosmetic.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">Косметический</span>
+                      <span class="card__price">ремонт | от 1 990 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+
+                <!-- CARD 2-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/capital.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">КАПИТАЛЬНЫЙ</span>
+                      <span class="card__price">ремонт | от 3 000 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Дополнительно</span>
+                      <span class="card__punct">Перепланировка</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Выравнивание стен</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                      <span class="card__punct">Покраска стен</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Выравнивание пола</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                      <span class="card__punct">Электромонтаж</span>
+                      <span class="card__punct">Разводка труб сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+
+                <!-- CARD 3-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/dising.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">ДИЗАЙНЕРСКИЙ</span>
+                      <span class="card__price">ремонт | от 4 500 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Дополнительно</span>
+                      <p class="card__punct card__punct_small">Ремонт по дизайн-проекту
+                        <br><span class="card__punct_subtext">(проект входит в стоимость)</span>
+                      </p>
+                      <span class="card__punct">Перепланировка</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Потолок</span>
+                      <span class="card__punct">Монтаж натяжного потолка</span>
+                      <span class="card__punct">Монтаж потолка из гипсокартона</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Выравнивание стен</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                      <span class="card__punct">Покраска стен</span>
+                      <span class="card__punct">Нанесение декоративной штукатурки, лепнины, художественной росписи</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Выравнивание пола</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                      <span class="card__punct">Электромонтаж</span>
+                      <span class="card__punct">Разводка труб сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <!-- CARD 1-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/cosmetic.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">Косметический</span>
+                      <span class="card__price">ремонт | от 1 990 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+
+                <!-- CARD 2-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/capital.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">КАПИТАЛЬНЫЙ</span>
+                      <span class="card__price">ремонт | от 3 000 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Дополнительно</span>
+                      <span class="card__punct">Перепланировка</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Выравнивание стен</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                      <span class="card__punct">Покраска стен</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Выравнивание пола</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                      <span class="card__punct">Электромонтаж</span>
+                      <span class="card__punct">Разводка труб сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+
+                <!-- CARD 3-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/dising.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">ДИЗАЙНЕРСКИЙ</span>
+                      <span class="card__price">ремонт | от 4 500 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Дополнительно</span>
+                      <p class="card__punct card__punct_small">Ремонт по дизайн-проекту
+                        <br><span class="card__punct_subtext">(проект входит в стоимость)</span>
+                      </p>
+                      <span class="card__punct">Перепланировка</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Потолок</span>
+                      <span class="card__punct">Монтаж натяжного потолка</span>
+                      <span class="card__punct">Монтаж потолка из гипсокартона</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Выравнивание стен</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                      <span class="card__punct">Покраска стен</span>
+                      <span class="card__punct">Нанесение декоративной штукатурки, лепнины, художественной росписи</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Выравнивание пола</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                      <span class="card__punct">Электромонтаж</span>
+                      <span class="card__punct">Разводка труб сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__item">
+                <!-- CARD 1-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/cosmetic.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">Косметический</span>
+                      <span class="card__price">ремонт | от 1 990 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+
+                <!-- CARD 2-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/capital.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">КАПИТАЛЬНЫЙ</span>
+                      <span class="card__price">ремонт | от 3 000 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Дополнительно</span>
+                      <span class="card__punct">Перепланировка</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Выравнивание стен</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                      <span class="card__punct">Покраска стен</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Выравнивание пола</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                      <span class="card__punct">Электромонтаж</span>
+                      <span class="card__punct">Разводка труб сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+
+                <!-- CARD 3-->
+                <div class="card">
+                  <div class="card__preview">
+                    <img class="card__img" src="./static/card/dising.jpg" alt="Косметический ремонт">
+                    <div class="card__text">
+                      <span class="card__title">ДИЗАЙНЕРСКИЙ</span>
+                      <span class="card__price">ремонт | от 4 500 &#8381;/м2</span>
+                    </div>
+                  </div>
+
+                  <div class="card__wrap">
+                    <div class="card__description">
+                      <span class="card__name">Дополнительно</span>
+                      <p class="card__punct card__punct_small">Ремонт по дизайн-проекту
+                        <br><span class="card__punct_subtext">(проект входит в стоимость)</span>
+                      </p>
+                      <span class="card__punct">Перепланировка</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Потолок</span>
+                      <span class="card__punct">Монтаж натяжного потолка</span>
+                      <span class="card__punct">Монтаж потолка из гипсокартона</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Стены</span>
+                      <span class="card__punct">Выравнивание стен</span>
+                      <span class="card__punct">Поклейка обоев</span>
+                      <span class="card__punct">Укладка кафеля на стены ванной</span>
+                      <span class="card__punct">Покраска стен</span>
+                      <span class="card__punct">Нанесение декоративной штукатурки, лепнины, художественной росписи</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Пол</span>
+                      <span class="card__punct">Выравнивание пола</span>
+                      <span class="card__punct">Укладка ламината / линолеума</span>
+                      <span class="card__punct">Установка плинтуса</span>
+                      <span class="card__punct">Укладка кафеля на пол ванной</span>
+                    </div>
+                    <div class="card__description">
+                      <span class="card__name">Сантехника/электрика</span>
+                      <span class="card__punct">Установка розеток и выключателей</span>
+                      <span class="card__punct">Установка сантехники</span>
+                      <span class="card__punct">Электромонтаж</span>
+                      <span class="card__punct">Разводка труб сантехники</span>
+                    </div>
+
+                    <button class="button button_card">Получить смету</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <svg class="cards__arrow cards__arrow_prev">
+            <use xlink:href="./styles\img\symbol.svg#cards__prev" />
+          </svg>
+          <svg class="cards__arrow cards__arrow_next">
+            <use xlink:href="./styles\img\symbol.svg#cards__next" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="costs">
+        <div class="calculate">
+          <div class="calculate__wrap">
+            <div class="calculate__card">
+              <span class="calculate__subtitle">Вы экономите наше время</span>
+              <span class="calculate__text">Поэтому с каждым ответом ваша скидка растет</span>
+
+              <img class="calculate__img" src="./static/calculate/sale.png" alt="Скидка 1%">
+            </div>
+            <div class="calculate__side-r">
+              <form class="calculate__form" action="#" method="POST">
+                <span class="calculate__title">Узнайте стоимость вашего <br> ремонта за 3 минуты</span>
+
+                <div class="calculate__choice">
+                  <div class="calculate__inputs-l">
+                    <label class="calculate__type">
+                      <span class="calculate__name">Тип ремонта</span>
+                      <div class="select">
+                        <select class="select__type" name="Тип ремонта">
+                          <option value="Косметический">Косметический</option>
+                          <option value="Капитальный">Капитальный</option>
+                          <option value="Дизайнерский">Дизайнерский</option>
+                        </select>
+                        <svg class="calculate__arrow">
+                          <use xlink:href="./styles\img\symbol.svg#select__arrow-down" />
+                        </svg>
+                      </div>
+                    </label>
+                    <label class="calculate__type calculate__type_down">
+                      <span class="calculate__name calculate__name_area">Площадь помещения</span>
+                      <div class="input">
+                        <input class="input__area" type="number" name="Площадь">
+                        <span class="input__vertical">|</span>
+                        <span class="input__unit">м<sup>2</sup></span>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="calculate__inputs-r">
+                    <label class="calculate__type">
+                      <span class="calculate__name">Тип объекта</span>
+                      <div class="select">
+                        <select class="select__type" name="Тип объекта">
+                          <option value="Новостройка">Новостройка</option>
+                          <option value="#">lorem</option>
+                          <option value="#">lorem</option>
+                        </select>
+                        <svg class="calculate__arrow">
+                          <use xlink:href="./styles\img\symbol.svg#select__arrow-down" />
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="calculate__type calculate__type_down">
+                      <span class="calculate__name">Количество комнат</span>
+                      <div class="radio">
+                        <label class="radio__item">
+                          <input class="radio__input" type="radio" name="rooms" checked>
+                          <span class="radio__button">1</span>
+                        </label>
+                        <label class="radio__item">
+                          <input class="radio__input" type="radio" name="rooms">
+                          <span class="radio__button">2</span>
+                        </label>
+                        <label class="radio__item">
+                          <input class="radio__input" type="radio" name="rooms">
+                          <span class="radio__button">3</span>
+                        </label>
+                        <label class="radio__item">
+                          <input class="radio__input" type="radio" name="rooms">
+                          <span class="radio__button">4</span>
+                        </label>
+                        <label class="radio__item">
+                          <input class="radio__input" type="radio" name="rooms">
+                          <span class="radio__button">5</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="button button_calculate" type="submit">Расчитать стоимость</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq">
+        <h1 class="title title_faq">Часто задоваемые вопросы</h1>
+        <div class="faq__wrap">
+          <div class="accordion">
+            <div class="accordion__item">
+              <h2 class="accordion__question">Как происходит оплата?</h2>
+              <p class="accordion__answer">У нас действует постоплатная система, поэтому оплату вы производите поэтапно, по факту, за выполненную работу. То же самое касается покупки стройматериалов, вы оплачиваете их только после доставки на объект.</p>
+              <svg class="accordion__svg">
+                <use xlink:href="./styles\img\symbol.svg#accordion__accordion-arrow" />
+              </svg>
+            </div>
+            <div class="accordion__item">
+              <h2 class="accordion__question">Как узнать точную стоимость работ?</h2>
+              <p class="accordion__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut distinctio tempore eaque provident fugit quaerat, inventore expedita amet aliquid. Praesentium?</p>
+              <svg class="accordion__svg">
+                <use xlink:href="./styles\img\symbol.svg#accordion__accordion-arrow" />
+              </svg>
+            </div>
+            <div class="accordion__item">
+              <h2 class="accordion__question">Как узнать сроки работы?</h2>
+              <p class="accordion__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ad libero quia magni architecto, corrupti sit et autem. Odit maxime eveniet error neque accusantium id debitis excepturi in ratione fuga doloremque, ipsam quo saepe harum sit cumque pariatur non ad?</p>
+              <svg class="accordion__svg">
+                <use xlink:href="./styles\img\symbol.svg#accordion__accordion-arrow" />
+              </svg>
+            </div>
+            <div class="accordion__item">
+              <h2 class="accordion__question">Что если через какое-то время обнаружатся "ошибки" ремонта, которые нужно будет исправить?</h2>
+              <p class="accordion__answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat suscipit libero animi eum natus nemo asperiores repellendus optio. Laboriosam delectus labore illo praesentium amet quisquam, excepturi rerum voluptate fuga minus. Distinctio, dolor enim tempora voluptatibus at iure, consectetur veniam ad nam id totam ab. Amet voluptatum soluta mollitia? Quidem officia reiciendis voluptate incidunt obcaecati distinctio! Libero magnam laborum non deserunt vitae odio nam assumenda, eius excepturi? Sed, quidem. Facilis numquam sequi porro labore dolor! Ipsam nostrum iure reiciendis doloribus dolor.</p>
+              <svg class="accordion__svg">
+                <use xlink:href="./styles\img\symbol.svg#accordion__accordion-arrow" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- <footer class="footer footer_theme_room">
+		<div class="container">
+
+			<div class="footer__wrap">
+				<div class="footer__side-l">
+					<a class="logo" href="#header">
+						<svg class="logo__svg">
+							<use xlink:href="./styles\img\symbol.svg#bar__home"></use>
+						</svg>
+						<span class="logo__text">home repair</span>
+					</a>
+					<div class="social">
+						<span class="social__title">Мы в соц. сетях</span>
+
+						<div class="social__container">
+							<a class="social__link" href="https://www.instagram.com/" target="_blank">
+								<svg class="social__svg">
+									<use xlink:href="./styles\img\symbol.svg#social__instagram"></use>
+								</svg>
+							</a>
+							<a class="social__link" href="https://www.vk.com/" target="_blank">
+								<svg class="social__svg social__svg_vk">
+									<use xlink:href="./styles\img\symbol.svg#social__vk"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<a href="#" class="footer__link footer__link_pos">Пользовательское соглашение</a>
+				</div>
+
+				<div class="footer__side-center">
+					<span class="footer__title footer__title_contacts">Контакты</span>
+				</div>
+			</div>
+		</div>
+	</footer> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts/app.js"></script>
+
+  </body>
+
+</html>
