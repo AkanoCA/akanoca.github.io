@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <link rel="stylesheet" href="./styles/app.css">
+  </head>
+
+  <body class="body">
+    <!-- BEMGO:symbol -->
+    <main class="main">
+      <div class="container">
+        <h1 class="container__title">Обработка</h1>
+        <button class="container__reset">Сброс</button>
+        <div class="questions container__questions">
+
+        </div>
+
+        <button class="count container__count">Рассчитать</button>
+
+        <div class="result container__result">
+          <h2 class="result__header">Результат:</h2>
+          <button class="result__copy">Копировать</button>
+        </div>
+
+      </div>
+    </main>
+
+    <template>
+      <div class="question"></div>
+      <div class="scale"></div>
+    </template>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./scripts/app.js"></script>
+
+  </body>
+
+</html>
