@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stylePlg.css">
+</head>
+
+<body id='header'>
+    <header class="header">
+        <div class="header__container">
+            <a class='logo' href="#header">
+                <img src="./assets/Logo_white.png" alt="">
+            </a>
+            <div class="menu">
+                <div class="menu__item menu__item_active">
+                    <a href="#header" class="menu__link">Главная</a>
+                    <div class="menu__subline"></div>
+                </div>
+                <div class="menu__item">
+                    <a href="#advantage" class="menu__link">Преимущества</a>
+                    <div class="menu__subline"></div>
+                </div>
+                <div class="menu__item">
+                    <a href="#about" class="menu__link">Обо мне</a>
+                    <div class="menu__subline"></div>
+                </div>
+                <div class="menu__item">
+                    <a href="#clients" class="menu__link">Отзывы</a>
+                    <div class="menu__subline"></div>
+                </div>
+                <div class="menu__item">
+                    <a href="#formats" class="menu__link">Услуги</a>
+                    <div class="menu__subline"></div>
+                </div>
+                <div class="menu__item">
+                    <a href="#footer" class="menu__link">Контакты</a>
+                    <div class="menu__subline"></div>
+                </div>
+                <!-- <div class="menu__item">
+                    <a href="#" class="menu__link">Мой блог</a>
+                    <div class="menu__subline"></div>
+                </div> -->
+            </div>
+            <div class="call">
+                <div class="phone">
+                    <div class="phone__mask">
+                        <div class="phone__rad-1"></div>
+                    </div>
+                    <svg class="phone__icon">
+                        <use xlink:href="./assets/sprite.svg#phone"></use>
+                    </svg>
+                </div class="phone__icon">
+                <a href="tel:+79009057506" class="call__number">+7(900) 905 75 06</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="opening">
+            <div class="container">
+                <div class="offer">
+                    <h1 class="offer__title">Помощь ближе, чем Вы думаете</h1>
+                    <div class="offer__action">
+                        <a href="#sing-up" class="js-link"><button class="button">Записаться на
+                                консультацию</button></a>
+                        <span class="offer__promotion"><span class="offer__promotion_theme_orange">!</span>
+                            Предварительная консультация <span
+                                class="offer__promotion_theme_massive">бесплатно!</span></span>
+                    </div>
+                </div>
+
+                <img src="./assets/Orbits.png" alt="Орбита" class="opening__orbit">
+            </div>
+            <svg class="opening__wave">
+                <use xlink:href="./assets/sprite.svg#wave"></use>
+            </svg>
+        </div>
+
+        <div class="advantage main__space" id='advantage'>
+            <h2 class="title"><span class="title__accent">Начав <wbr> посещать психолога,</span> <br>
+                    вы сможете
+            </h2>
+            <div class="presentation advantage__presentation">
+                <div class="presentation__slider">
+                    <div class="presentation__display">
+                        <div class="presentation__slide">
+                            <p class="presentation__text">Научиться понимать и принимать себя,<br>
+                                находить в себе внутренние ресурсы</p>
+                        </div>
+                        <div class="presentation__slide">
+                            <p class="presentation__text">Избавиться от тревоги, стресса,<br> страха, фобий</p>
+                        </div>
+                        <div class="presentation__slide">
+                            <p class="presentation__text">Избавиться от психосоматических<br>
+                                симптомов и растройств</p>
+                        </div>
+                        <div class="presentation__slide">
+                            <p class="presentation__text">Правильно реагировать <br>
+                                на стрессовые ситуации</p>
+                        </div>
+                        <div class="presentation__slide">
+                            <p class="presentation__text">Создавать более гармоничные<br>
+                                отношения с близкими людьми</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="presentation__switcher">
+                    <div class="presentation__button">
+                        <div class="presentation__indicator presentation__indicator_active"></div>
+                        <svg class="presentation__icon">
+                            <use xlink:href="./assets/sprite.svg#girl"></use>
+                        </svg>
+                    </div>
+                    <div class="presentation__button">
+                        <div class="presentation__indicator"></div>
+                        <svg class="presentation__icon">
+                            <use xlink:href="./assets/sprite.svg#scared"></use>
+                        </svg>
+                    </div>
+                    <div class="presentation__button">
+                        <div class="presentation__indicator"></div>
+                        <svg class="presentation__icon">
+                            <use xlink:href="./assets/sprite.svg#heart"></use>
+                        </svg>
+                    </div>
+                    <div class="presentation__button">
+                        <div class="presentation__indicator"></div>
+                        <svg class="presentation__icon">
+                            <use xlink:href="./assets/sprite.svg#think"></use>
+                        </svg>
+                    </div>
+                    <div class="presentation__button">
+                        <div class="presentation__indicator"></div>
+                        <svg class="presentation__icon">
+                            <use xlink:href="./assets/sprite.svg#family"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <a href="#sing-up" class="js-link advantage__button"><button class="button button_theme_forest ">Сделать
+                    первый шаг</button></a>
+        </div>
+
+        <div class="about main__space">
+            <img src="./assets/person-2.png" alt="Андрей Саблин" class="about__picture" id='about'>
+            <div class="about__description">
+                <h3 class="about__title">Андрей Саблин</h3>
+                <span class="about__subtitle">Кратко обо мне</span>
+                <p class="about__text">В 2019 году принял участие в семинарах «Клинический гипноз и гипнотерапия.
+                    Проработка психосоматических расстройств» в «Центре клинического гипноза и гипнотерапии» П. А.
+                    Бутузова и стал членом «Восточноевропейской ассоциации гипнотерапевтов и клинических психологов».
+                </p>
+                <p class="about__text">В 2021 году окончил Рязанский Государственный медицинский университет им. акад.
+                    И. П. Павлова по специальности 37.05.01 Клиническая психология (уровень специалитета). Специализация
+                    «Психологическое обеспечение в чрезвычайных и экстремальных ситуациях».</p>
+            </div>
+        </div>
+
+        <div class="certificates main__certificates">
+            <div class="certificates__item">
+                <div class="certificates__preview">
+                    <a href="./assets/diploma-full.jpg" data-fancybox="gallery">
+                        <div class="certificates__zoom">
+                            <svg class="certificates__icon">
+                                <use xlink:href="./assets/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <img src="./assets/diploma.png" alt="" class="certificates__picture">
+                </div>
+                <p class="certificates__title">Дипломированный специалист</p>
+            </div>
+            <div class="certificates__item">
+                <div class="certificates__preview">
+                    <a href="./assets/vagip-full.jpg" data-fancybox="gallery">
+                        <div class="certificates__zoom">
+                            <svg class="certificates__icon">
+                                <use xlink:href="./assets/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <img src="./assets/vagip.png" alt="" class="certificates__picture">
+                </div>
+                <p class="certificates__title">Член «Восточноевропейской <br>
+                    ассоциации гипнотерапевтов»</p>
+            </div>
+            <div class="certificates__item">
+                <div class="certificates__preview">
+                    <a href="./assets/seminars-full.jpg" data-fancybox="gallery">
+                        <div class="certificates__zoom">
+                            <svg class="certificates__icon">
+                                <use xlink:href="./assets/sprite.svg#zoom"></use>
+                            </svg>
+                        </div>
+                    </a>
+                    <img src="./assets/seminars.png" alt="" class="certificates__picture">
+                </div>
+                <p class="certificates__title">Участник семинаров по проработке<br>
+                    психосоматических расстройств</p>
+            </div>
+
+        </div>
+
+        <div class="clients main__space" id='clients'>
+            <h2 class="title">Что говорят <span class="title__accent">клиенты</span></h2>
+            <div class="reviews clients__reviews">
+                <div class="reviews__slider">
+                    <div class="reviews__wrap">
+                        <div class="reviews__display">
+                            <div class="reviews__slide">
+                                <blockquote class="reviews__text">Андрей,
+                                    хотелось бы поблагодарить вас за сеанс.
+                                    Наш сеанс с вами был поверхностный, но даже после него мне стало намного легче.
+                                    У меня прошла обида на близкого мне человека.
+                                    Я до сих пор в шоке, что спустя 10 минут мы уже обнимались 🙈
+                                    После него я многое переосмыслила и поняла действительно важные для меня ценности в жизни😌
+                                    Вы очень хороший психолог😊
+                                    Ещё раз большое спасибо вам, я вам очень благодарна😊</blockquote>
+                                <cite class="reviews__person">Просковья</cite>
+                            </div>
+                            <div class="reviews__slide">
+                                <blockquote class="reviews__text">Еще раз здравствуйте, Андрей! Я все еще в легком шоке
+                                    от нашего сеанса!😄
+                                    Всю неделю я была совершенно спокойна... не было ни одного сиптома моей
+                                    психосоматики..😨
+                                    Я чувствовала только легкость, радость и спокойствие 🙈🙈🙈
+                                    Я так давно жила со своими проблемами, что без них мне очень непривычно 👀
+                                    И это прекрасно 🤙🤙🤙
+                                    Вы и правда хорошо знаете свое дело и очень любите свою работу😎
+                                    Огромное спасибо вам и надеюсь что мы и дальше будем прорабатывать мои уже крохотные
+                                    проблемки🔝🔝🔝</blockquote>
+                                <cite class="reviews__person">Илона</cite>
+                            </div>
+                            <div class="reviews__slide">
+                                <blockquote class="reviews__text">Меня привели к Андрею очень не простые и личные
+                                    жизненные обстоятельства, которые сложились на тот момент. Сначала было неловко
+                                    рассказать о своих проблемах, переживаниях, личных и давних обидах, но Андрей
+                                    человек профессиональный и очень чуткий, участливый и внимательный к деталям сразу
+                                    настроил меня на нужный лад, что помогло расслабиться и легко довериться.
+                                    Очень много работы было проделано с его стороны относительно деталей и глубины моих
+                                    проблемы. В процессе работы, что важно, он не искал "виноватых", а вместе со мной
+                                    старался найти ответ на вопрос "что делать в той или иной ситуации". Все
+                                    рекомендации, которые мне были даны относительно настроя себя и поведения в
+                                    обыденных ситуациях помогли мне не только в решении многих проблем, но и в нынешних
+                                    отношениях с близкими найти тандем, быть более сдержанной в эмоциях, научил находить
+                                    выход в, как казалось ранее, безвыходных ситуациях.
+                                    Так что продолжай делать то, что делаешь, это у тебя уж точно получается.
+                                    Классно когда человек находит то место, где он действительно должен был оказаться 👌
+                                </blockquote>
+                                <cite class="reviews__person">Надежда</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="reviews__arrow reviews__arrow_pos_left">
+                        <use xlink:href="./assets/sprite.svg#quote-left"></use>
+                    </svg>
+                    <svg class="reviews__arrow reviews__arrow_pos_right">
+                        <use xlink:href="./assets/sprite.svg#quote-right"></use>
+                    </svg>
+                </div>
+                <div class="reviews__pagination">
+                    <div class="reviews__button">
+                        <div class="reviews__indicator reviews__indicator_active"></div>
+                    </div>
+                    <div class="reviews__button">
+                        <div class="reviews__indicator"></div>
+                    </div>
+                    <div class="reviews__button">
+                        <div class="reviews__indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="formats main__space">
+            <h2 class="title" id='formats'>Форматы работы</h2>
+            <div class="cards formats__cards">
+                <div class="card">
+                    <img src="./assets/online.jpg" alt="" class="card__picture">
+                    <div class="card__wrap">
+                        <div class="card__bar">
+                            <span class="card__title">Онлайн-косультация</span>
+                            <div class="card__info">
+                                <span class="card__price">1000 &#8381;/час</span>
+                                <div class="card__schedule">
+                                    <svg class="card__icon">
+                                        <use xlink:href="./assets/sprite.svg#clock"></use>
+                                    </svg>
+                                    <span class="card__time">с 10:00 до 20:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__text">Онлайн консультация проводится на любой удобной для Вас платформе по видеосвязи. <br> Для такого вида консультирования совершенно не важно в каком городе или месте Вы находитесь. Его эффективность не меньше очного, а удобства намного больше, из-за чего оно всё больше практикуется современными психологами <br> и психотерапевтами.</p>
+                        </div>
+                        <a href="#sing-up" class="js-link card__link">
+                            <button class="button button_theme_forest button_mode_adaptive">Записаться на
+                                онлайн-консультацию</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/offline.jpg" alt="" class="card__picture">
+                    <div class="card__wrap">
+                        <div class="card__bar">
+                            <span class="card__title">Очная-косультация</span>
+                            <div class="card__info">
+                                <span class="card__price">1500 &#8381;/час</span>
+                                <div class="card__schedule">
+                                    <svg class="card__icon">
+                                        <use xlink:href="./assets/sprite.svg#clock"></use>
+                                    </svg>
+                                    <span class="card__time">с 10:00 до 20:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__text">Очная консультация осуществляется через непосредственную беседу, установление полноценного вербального и визуального контакта в пределах одного помещения. Такой вид консультирования более привычный и стандартный, но с учётом современных средств дистанционной коммуникации, используется всё реже. Больше подходит для консультирования пар и семей.</p>
+                        </div>
+                        <a href="#sing-up" class="js-link card__link">
+                            <button class="button button_theme_forest button_mode_adaptive">Записаться на очную
+                                консультацию</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plan main__space">
+            <h2 class="title">Схема работы</h2>
+            <div class="schema plan__schema">
+                <div class="schema__card">
+                    <div class="schema__line">
+                        <svg class="schema__arrow">
+                            <use xlink:href="./assets/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__circle">
+                        <svg class="schema__icon">
+                            <use xlink:href="./assets/sprite.svg#verify"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__text">Вы записываетесь <br>
+                        на консультацию</div>
+                    <svg class="schema__number">
+                        <use xlink:href="./assets/sprite.svg#number-one"></use>
+                    </svg>
+                </div>
+                <div class="schema__card">
+                    <div class="schema__line">
+                        <svg class="schema__arrow">
+                            <use xlink:href="./assets/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__circle">
+                        <svg class="schema__icon">
+                            <use xlink:href="./assets/sprite.svg#smartphone"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__text">Я связываюсь <br>
+                        с Вами в ближайшее <br> время</div>
+                    <svg class="schema__number">
+                        <use xlink:href="./assets/sprite.svg#number-two"></use>
+                    </svg>
+                </div>
+                <div class="schema__card">
+                    <div class="schema__line">
+                        <svg class="schema__arrow">
+                            <use xlink:href="./assets/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__circle">
+                        <svg class="schema__icon">
+                            <use xlink:href="./assets/sprite.svg#speech-bubble"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__text">Вы проходите <br> предварительное <br>
+                        косультирование</div>
+                    <svg class="schema__number">
+                        <use xlink:href="./assets/sprite.svg#number-three"></use>
+                    </svg>
+                </div>
+                <div class="schema__card">
+                    <div class="schema__line">
+                        <svg class="schema__arrow">
+                            <use xlink:href="./assets/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__circle">
+                        <svg class="schema__icon">
+                            <use xlink:href="./assets/sprite.svg#headphone"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__text">Консультации <br> в выбранном<br>
+                        Вами формате</div>
+                    <svg class="schema__number">
+                        <use xlink:href="./assets/sprite.svg#number-four"></use>
+                    </svg>
+                </div>
+                <div class="schema__card">
+                    <div class="schema__circle">
+                        <svg class="schema__icon">
+                            <use xlink:href="./assets/sprite.svg#smile"></use>
+                        </svg>
+                    </div>
+                    <div class="schema__text">Обсуждение<br> произошедших<br> изменений,<br> завершение<br>
+                        консультирования</div>
+                    <svg class="schema__number">
+                        <use xlink:href="./assets/sprite.svg#number-five"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="sing-up main__space" id="sing-up">
+            <div class="sing-up__wrapper">
+                <div class="sing-up__tape"></div>
+                <div class="sing-up__conteiner">
+                    <div class="sing-up__tagline">
+                        <span class="sing-up__text sing-up__text_mode_line-1">Если не сейчас,</span>
+                        <span class="sing-up__text sing-up__text_mode_line-2">то когда?</span>
+                    </div>
+                    <div class="sing-up__card">
+                        <div class="sing-up__icon">
+                            <svg class="sing-up__open">
+                                <use xlink:href="./assets/sprite.svg#info"></use>
+                            </svg>
+
+                            <svg class="sing-up__close sing-up__icon_hide">
+                                <use xlink:href="./assets/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="sing-up__wrap">
+                            <h2 class="title title_size_flatten">Записаться <br><span class="title__accent">на
+                                    консультацию</span></h2>
+                            <form action="mail.php" method="POST" class="sing-up__form">
+                                <label class="sing-up__label">
+                                    <fieldset class="sing-up__field">
+                                        <legend class="sing-up__legend">Ваше имя</legend>
+                                        <input type="text" class="sing-up__input" placeholder="Иван" name="name"
+                                            required>
+                                    </fieldset>
+                                </label>
+                                <label class="sing-up__label">
+                                    <fieldset class="sing-up__field">
+                                        <legend class="sing-up__legend">Формат связи</legend>
+                                        <select class="sing-up__input sing-up__input_select js-form-select"
+                                            name='format' required>
+                                            <option value="mob">Мобильный телефон</option>
+                                            <option value="vk">VK</option>
+                                            <option value="inst">Instagramm</option>
+                                            <option value="telegramm">Telegramm</option>
+                                        </select>
+                                    </fieldset>
+                                </label>
+                                <label class="sing-up__label">
+                                    <fieldset class="sing-up__field">
+                                        <legend class="sing-up__legend js-form-contacts-title">Телефон</legend>
+                                        <input type="text" class="sing-up__input js-form-contacts"
+                                            placeholder="+7(999) 999 99 99" name="contacts" required>
+                                    </fieldset>
+                                </label>
+                                <button type="submit"
+                                    class="button button_mode_flatten button_theme_dark-orange button_mode_adaptive sing-up__button">Отправить
+                                    заявку</button>
+                            </form>
+                            <div class="sing-up__info sing-up__info_hide">
+                                <p class="sing-up__description">Запишитесь на <b>бесплатную</b> 15 минутную сессию,
+                                    на которой мы с Вами познакомимся: я кратко расскажу о своей практике, побеседуем о
+                                    Вашей проблеме.
+                                    После чего обсудим несколько организационных вопросов, в том числе и график Ваших
+                                    консультаций.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="adress main__space" id='footer'>
+            <div class="adress__info">
+                <span class="adress__place">г. Кулебаки</span>
+                <div class="adress__line">
+                    <svg class="adress__icon">
+                        <use xlink:href="./assets/sprite.svg#adress_phone"></use>
+                    </svg>
+                    <a class="adress__contacts" href="tel:+79009057506">+7(900) 905 75 06</a>
+                </div>
+                <div class="adress__line">
+                    <svg class="adress__icon">
+                        <use xlink:href="./assets/sprite.svg#adress_mail"></use>
+                    </svg>
+                    <a class="adress__contacts" href="mailto:sablin-andrej@mail.ru">sablin-andrej@mail.ru</a>
+                </div>
+            </div>
+            <div class="adress__map" id="map"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bar">
+                <div class="footer__left-side">
+                    <a href="#header" class="js-footer__link">
+                        <img class="footer__logo" src="./assets/Logo_white.png" alt='Андрей Саблин' />
+                    </a>
+                    <div class="footer__contacts">
+                        <a href="tel: +79009057506" class="footer__icon">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#footer__phone"></use>
+                            </svg>
+                        </a>
+                        <a href="mailto:sablin-andrej@mail.ru" class="footer__icon">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#footer__mail"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/andrewsab_23/?hl=ru" class="footer__icon" target="_blank">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#footer__inst"></use>
+                            </svg>
+                        </a>
+                        <a href="https://vk.com/andrew_sab" class="footer__icon" target="_blank">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#footer__vk"></use>
+                            </svg>
+                        </a>
+                        <a href="skype:andrey.sablin.1996?call" class="footer__icon">
+                            <svg>
+                                <use xlink:href="./assets/sprite.svg#footer__skype"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right-side">
+                    <a href="" class="footer__politics">Политика конфиденциальности</a>
+                    <a href="" class="footer__politics">Пользовательское соглашение</a>
+                </div>
+            </div>
+            <span class="footer__copyright">(c) 2021 Андрей Саблин. Копирование информации, размещенной на данном
+                ресурсе
+                возможно с сохранением ссылки на источник.</span>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ff057336-5844-4409-909c-8ac516f717da"
+        type="text/javascript"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
